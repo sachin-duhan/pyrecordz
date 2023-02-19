@@ -1,0 +1,4 @@
+moviepy
+opencv-python
+pyaudio
+pyautogui

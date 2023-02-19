@@ -3,7 +3,7 @@ import numpy as np
 import pyaudio
 import wave
 import threading
-from moviepy.editor import AudioFileClip, VideoClip, concatenate_videoclips, VideoFileClip
+from moviepy.editor import AudioFileClip, VideoClip, VideoFileClip
 import os
 import pyautogui
 
@@ -28,8 +28,10 @@ audio_frames = []
 
 def record_audio():
     audio = pyaudio.PyAudio()
-    stream = audio.open(format=FORMAT, channels=CHANNELS, rate=RATE,
-                        input=True, frames_per_buffer=CHUNK)
+    stream = audio.open(
+        format=FORMAT, channels=CHANNELS, rate=RATE,
+        input=True, frames_per_buffer=CHUNK
+    )
 
     while True:
         data = stream.read(CHUNK)

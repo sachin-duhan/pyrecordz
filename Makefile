@@ -4,4 +4,4 @@ install:
 
 # Run the screen recording code
 run:
-	python main.py
+	python app.py

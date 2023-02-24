@@ -80,5 +80,4 @@ audio = AudioFileClip("audio.wav")
 final = video.set_audio(audio)
 final.write_videofile(VIDEO_NAME, codec=VIDEO_CODEC, fps=VIDEO_FPS)
 
-# Delete the temporary audio file
 os.remove("audio.wav")

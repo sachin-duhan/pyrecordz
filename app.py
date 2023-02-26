@@ -44,7 +44,6 @@ def record_audio():
 audio_thread = threading.Thread(target=record_audio)
 audio_thread.start()
 
-# Define the frame generator function
 def get_frames():
     while True:
         # Take screenshot using PyAutoGUI

@@ -81,4 +81,5 @@ final = video.set_audio(audio)
 final.write_videofile(VIDEO_NAME, codec=VIDEO_CODEC, fps=VIDEO_FPS)
 
 # Delete the temporary audio file
+print("hello cutie, 1 2 3 4 5")
 os.remove("audio.wav")

@@ -44,7 +44,6 @@ def record_audio():
 audio_thread = threading.Thread(target=record_audio)
 audio_thread.start()
 
-# Define the frame generator function
 def get_frames():
     while True:
         # Take screenshot using PyAutoGUI
@@ -81,4 +80,5 @@ final = video.set_audio(audio)
 final.write_videofile(VIDEO_NAME, codec=VIDEO_CODEC, fps=VIDEO_FPS)
 
 # Delete the temporary audio file
+
 os.remove("audio.wav")

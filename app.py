@@ -10,7 +10,7 @@ import pyautogui
 # Define resolution and framerate
 SCREEN_SIZE = (640, 480)
 FPS = 30.0
-
+#testing branch
 # Define audio settings
 CHUNK = 1024
 FORMAT = pyaudio.paInt16

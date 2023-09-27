@@ -7,6 +7,8 @@ from moviepy.editor import AudioFileClip, VideoClip, VideoFileClip
 import os
 import pyautogui
 
+# hello cutie
+
 # Define resolution and framerate
 SCREEN_SIZE = (640, 480)
 FPS = 30.0
